@@ -11,6 +11,8 @@ class Keyboard_input {
     name = ob_sc.next();
     age = ob_sc.nextInt();
 
+    ob_sc.close();
+
     System.out.println(name + " is a cool name.");
     System.out.println(age + " years old is good age to learn Java.");
 
