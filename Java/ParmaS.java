@@ -1,25 +1,25 @@
-class E { // 슈퍼클래스
+class E1 { // 슈퍼클래스
   void bye() {
     System.out.println("Good bye");
     
   }
 }
 
-class J extends E { // 서브클래스
+class J extends E1 { // 서브클래스
   void bye() {
     System.out.println("안녕히 계세요");
   }
 }
 
 class EJ {
-  void greet(E e) {
+  void greet(E1 e) {
     e.bye();
   }
 }
 
 class Parmas {
   public static void main(String[] args) {
-    E oe = new E();
+    E1 oe = new E1();
     J oj = new J();
     EJ oej = new EJ();
 
